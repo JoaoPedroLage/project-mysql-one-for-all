@@ -26,6 +26,8 @@ CREATE TABLE SpotifyClone.artists(
 CREATE TABLE SpotifyClone.followers(
     user_id INT NOT NULL,
     following_artist_id INT NOT NULL,
+    PRIMARY KEY (user_id, following_artist_id),
+
 
     FOREIGN KEY (user_id) REFERENCES users (id),
     FOREIGN KEY (following_artist_id) REFERENCES artists (id)
@@ -54,6 +56,7 @@ CREATE TABLE SpotifyClone.songs(
 CREATE TABLE SpotifyClone.reproductions(
     user_id INT NOT NULL,
     song_id INT NOT NULL,
+    PRIMARY KEY (user_id, song_id),
     reproduction_date DATETIME NOT NULL,
 
     FOREIGN KEY (user_id) REFERENCES users (id),
@@ -88,8 +91,7 @@ VALUES
   ('Peter Strong'),
   ('Freedie Shannon'),
   ('Tyler Isle'),
-  ('Fog'),
-  ('Peter Strong');
+  ('Fog');
 
 INSERT INTO SpotifyClone.followers (user_id, following_artist_id)
 VALUES
@@ -106,7 +108,7 @@ VALUES
   (6, 6),
   (6, 1),
   (6, 2),
-  (7, 7),
+  (7, 3),
   (7, 5),
   (8, 2),
   (8, 5),
