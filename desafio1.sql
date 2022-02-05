@@ -123,7 +123,7 @@ VALUES
   ('Envious', 2, 1990),
   ('Exuberant', 2, 1930),
   ('Hallowed Steam', 3, 1995),
-  ('Incandescent', 2, 1998),
+  ('Incandescent', 1, 1998),
   ('Temporary Culture', 4, 2001),
   ('Library of liberty', 4, 2003),
   ('Chained Down', 5, 2007),
