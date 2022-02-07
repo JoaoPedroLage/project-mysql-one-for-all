@@ -1,5 +1,5 @@
 SELECT 
-    Song.song_name AS nome_musica,
+    song_name AS nome_musica,
 CASE
     WHEN song_name LIKE '%Streets' THEN REPLACE(song_name, 'Streets', 'Code Review')
     WHEN song_name LIKE '%Her Own' THEN REPLACE(song_name, 'Her Own', 'Trybe')
@@ -8,7 +8,7 @@ CASE
     WHEN song_name LIKE '%Circus' THEN REPLACE(song_name, 'Circus', 'Pull Request')
   END AS novo_nome
 FROM
-    SpotifyClone.songs AS Song
+    SpotifyClone.songs
 GROUP BY nome_musica
 HAVING nome_musica <> novo_nome
 ORDER BY nome_musica, novo_nome;
