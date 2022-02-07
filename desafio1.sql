@@ -168,7 +168,7 @@ VALUES
   ("He's Trouble", 9, 5, 138),
   ("I Heard I Want To Bo Alone", 9, 5, 120),
   ("I Ride Alone", 9, 5, 151),
-  ("Honey ", 10, 6, 79),
+  ("Honey", 10, 6, 79),
   ("You Cheated On Me", 10, 6, 95),
   ("Wouldn't It Be Nice", 10, 6, 213),
   ("Baby", 10, 6, 136),
