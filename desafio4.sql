@@ -5,7 +5,7 @@ SELECT
         'Usuário inativo') AS condicao_usuario
 FROM
     SpotifyClone.reproductions AS Rep
-        INNER JOIN
+        JOIN
     SpotifyClone.users AS User ON User.id = Rep.user_id
 GROUP BY usuario
 ORDER BY usuario;
